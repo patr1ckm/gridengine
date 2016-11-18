@@ -1,0 +1,67 @@
+---
+title: "Grid Engine and R Cookbook"
+author: "Patrick Miller"
+date: "11/18/2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Initialization
+
+### Connecting to front end machine
+
+See http://wiki.crc.nd.edu/wiki/index.php/CRC_Quick_Start_Guide for connection details.
+
+
+### Uploading Files 
+
+- Download a file transfer program (e.g. Cyberduck)
+- Using Cyber duck, connect to the remote machine by clicking add connection and following the example above
+- Drag and drop files
+
+### Basic Unix Commands
+
+- `ls` list files
+- `cd` change directory
+- `mkdir` make directory
+- `rm` rm file
+
+Use Tab to autocomplete files and folder names so that you don't have to type them accurately.
+
+### Exercise 1:
+
+- Create a file `ex1.R` with the following:
+```{r, eval=FALSE}
+
+f <- function(x){
+  x
+}
+f(1)
+```
+
+- Create a directory on the head node called `ex1`
+- Upload `ex1.R` to `ex1`
+
+### Running R from the command Line
+
+Software on the crc is available by loading up specific modules. 
+
+`> module avail`
+
+Lists all the available modules.
+
+`> module load R`
+
+Loads R. R programs can be run as scripts using the command `Rscript`
+
+`> Rscript ex1.R`
+
+# Example 1
+
+# Example 2
+
+# Example 3
