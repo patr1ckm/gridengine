@@ -6,4 +6,6 @@
 #$ -N patr1ckm   # Specify job name
 #$ -t 1:4        
 
+module load R
+
 Rscript ex2.R
