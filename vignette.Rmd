@@ -20,8 +20,8 @@ See http://wiki.crc.nd.edu/wiki/index.php/CRC_Quick_Start_Guide for connection d
 ### Uploading Files 
 
 - Download a file transfer program (e.g. Cyberduck)
-- Using Cyber duck, connect to the remote machine by clicking add connection and following the example above
-- Drag and drop files
+- Using Cyber duck, connect to the remote machine by clicking `Add Connection`.
+- Drag and drop files.
 
 ### Basic Unix Commands
 
@@ -30,7 +30,18 @@ See http://wiki.crc.nd.edu/wiki/index.php/CRC_Quick_Start_Guide for connection d
 - `mkdir` make directory
 - `rm` rm file
 
-Use Tab to autocomplete files and folder names so that you don't have to type them accurately.
+Use `Tab` to autocomplete files and folder names to esnure accuracy.
+
+Edit the file `.cshrc` to contain the following aliases, replacing `username` with your username. This allows default coloring for folders and files, and creates the commonly used command `qst` for viewing the status of your jobs in the queue.
+
+```
+alias ls 'ls --color=auto' 
+alias qst 'qstat -u username'
+```
+
+
+
+
 
 ### Exercise 1:
 
