@@ -1,0 +1,9 @@
+#!/bin/csh
+#$ -M patr1ckm.crc@gmail.com     # Email address for job notification
+#$ -m a          # Send mail when job begins, ends and aborts
+#$ -pe smp 4      # environment and legal core size
+#$ -q long       # Specify queue (should always be long)
+#$ -N patr1ckm   # Specify job name
+#$ -t 1:4        
+
+Rscript ex1.R
